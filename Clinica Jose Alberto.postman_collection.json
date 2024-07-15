@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "c138e785-d8c5-4a79-be78-00a3c325109e",
+		"name": "Clinica Jose Alberto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36990369"
+	},
+	"item": [
+		{
+			"name": "listar todos los ingresos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2NDUzNCwiZXhwIjoxNzIxMDY1NTM0fQ.eILEt6Q8pTXF3E4WARncs0frxC8Js4vR3bCZJ8g_MRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/ingreso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"ingreso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Ingreso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2NDA3NywiZXhwIjoxNzIxMDY1MDc3fQ.3stKY4gHWR0mXVhPaS8Tp_pl5WUtO3FpI4JdwULOanY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_mascota\": 1,\r\n    \"fecha_ingreso\":\"2024-07-15\",\r\n    \"dniPersona\": \"12345678A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/ingreso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"ingreso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ingreso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2MDAzMywiZXhwIjoxNzIxMDYxMDMzfQ.-96QckWtAn_MXKRzid824qOUbE6BnwJbH7tDTzUyUZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\":\"FINALIZADO\",\r\n    \"fecha_finalizacion\": \"2024-07-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/ingreso/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"ingreso",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Ingreso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2MDAzMywiZXhwIjoxNzIxMDYxMDMzfQ.-96QckWtAn_MXKRzid824qOUbE6BnwJbH7tDTzUyUZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/ingreso/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"ingreso",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar mascota by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2MzA2MywiZXhwIjoxNzIxMDY0MDYzfQ.CzYXn4DWNm4gFr06pcGE-9bAYsef1010StfDLuUxQW4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/mascota/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"mascota",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos los ingresos de una mascota",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA1NTI2MCwiZXhwIjoxNzIxMDU2MjYwfQ.q6g1gr6ppSyXJ_xRVuRzFsEIIfgZTF8xI1iJdJH353s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/mascota/2/ingreso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"mascota",
+						"2",
+						"ingreso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear mascota",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2MDAzMywiZXhwIjoxNzIxMDYxMDMzfQ.-96QckWtAn_MXKRzid824qOUbE6BnwJbH7tDTzUyUZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"especie\":\"Perro\",\r\n    \"raza\":\"pastor aleman\",\r\n    \"edad\":\"1 año\",\r\n    \"codigo_identificacion\":\"X1234A\",\r\n    \"dni_responsable\":\"12345678X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/mascota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"mascota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete mascota",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcyMTA2MDAzMywiZXhwIjoxNzIxMDYxMDMzfQ.-96QckWtAn_MXKRzid824qOUbE6BnwJbH7tDTzUyUZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/mascota/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"mascota",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hospitalclinicovet-api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hospitalclinicovet-api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
